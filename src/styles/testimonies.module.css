@@ -1,0 +1,29 @@
+.section3{
+    width: 80%;
+    margin: auto;
+}
+.section3 h3{
+    text-align: center;
+}
+.reasonCard{
+    display: flex;
+    margin: 1rem auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reasonCard img{
+    width: 50%;
+    margin: 1rem auto;
+}
+.reasonCard h4{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+.reasonCard p{
+    margin: 5px auto;
+}
+.reasonCard hr{
+    width: 80%;
+}

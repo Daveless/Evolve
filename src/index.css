@@ -1,5 +1,13 @@
+:root{
+    --primaryColor: #4C32A0;
+    --secondaryColor: #FFC45B;
+}
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+
 }

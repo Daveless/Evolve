@@ -1,21 +1,38 @@
 .navMenu{
     width: 80%;
-    height: 4rem;
+    padding: 0 10%;
+    height: 100%;
     max-width: 100vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background: var(--primaryColor);    
+}
+svg{
+    stroke: var(--primaryColor);
+    width: 30px;
+    height: 30px;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC45B;;
 }
 .navContainer{
     width: 100%;
+    height: 60px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .menuLogo{
-    width: 40%;
-    font-size: 30px;
+    width: 30%;
     align-items: center;
+}
+h1{
+    font-size: 15px;
+    width: 15rem;
+    margin: 0 auto;
+    color: white;
 }
 .navMenu ul{
     display: flex;
@@ -31,24 +48,31 @@
     color: black;
 }
 /*---------mobile--------*/
-.mobileMenu{
-    position: absolute;
+.menuOn{
     display: flex;
     align-content: center;
     justify-content: center;
+    position: absolute;    
     top: 4rem;
     width: 100%;
     left: 0%;
-    background-color: blanchedalmond;
+    background-color: white;
+    z-index: 3;
 }
-.mobileMenu ul{
+
+.menuOn ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     
 }
-.mobileMenu ul li{
+.menuOn ul li{
     text-align: center;
     margin: 1rem auto
+}
+
+.menuOff{
+    display: none;
 }

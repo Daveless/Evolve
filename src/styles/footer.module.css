@@ -1,0 +1,53 @@
+.footer{
+    width: 80%;
+    padding: 10%;
+    margin: auto;
+    background: var(--secondaryColor);
+    color: rgb(0, 0, 0);
+    
+}
+.footerTitle h4{
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto -10px;
+}
+.footerTitle p{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h4{
+font-size: 20px;
+font-weight: 700;
+margin-bottom: 5px;
+}
+.contact p{
+    margin: 5px;
+    font-weight: 500;
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+.externalLinks{
+    margin-top: 15px;
+}
+.externalLinks ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.credits{
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.75);
+}
+.credits a{
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
