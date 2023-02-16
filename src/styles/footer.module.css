@@ -1,8 +1,10 @@
+.footerContainer{
+    background: var(--secondaryColor);
+}
 .footer{
     width: 80%;
     padding: 10%;
-    margin: auto;
-    background: var(--secondaryColor);
+    margin: auto;    
     color: rgb(0, 0, 0);
     
 }
@@ -51,3 +53,22 @@ margin-bottom: 5px;
     font-weight: 600;
 }
 
+@media (min-width:600px)  { 
+    .footer{
+        width: 50%;
+    }
+}
+@media (min-width:1281px)  {
+.footerContainer{
+    margin-bottom: 0;
+    padding: 1rem 0;
+}
+    .footer{
+        width: 25%;
+        padding: 0;
+        margin: 1rem auto 0rem;
+    }
+    .externalLinks{
+        width: 50%;
+    }
+    }

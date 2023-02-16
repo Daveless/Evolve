@@ -1,8 +1,8 @@
 
 
-const externalLinkButton = ({link, buttonColor, text}) => {
+const externalLinkButton = ({link, buttonColor, text, opensInAnotherTab}) => {
   return (
-    <a target='_blank' href={link} >
+    <a target={opensInAnotherTab} href={link} >
         <button className={buttonColor}>
             <p>{text}</p>
         </button>

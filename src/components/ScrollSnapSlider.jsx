@@ -21,7 +21,7 @@ const ScrollSnapSlider = ({hasPictures, coursesList, informationButton}) => {
                 <ul>
                   {course.ventajas.map(advantage => (<li>{advantage}</li>))}
                 </ul>
-                {informationButton ? <ExternalLinkButton link={`https://api.whatsapp.com/send?phone=593984463104&text=Hello!%20Quiero%20informaci%C3%B3n%20sobre%20${course.name}`} buttonColor={buttonStyle.primaryColor} text='Mas información'></ExternalLinkButton>:null}
+                {informationButton ? <ExternalLinkButton link={`https://api.whatsapp.com/send?phone=593984463104&text=Hello!%20Quiero%20informaci%C3%B3n%20sobre%20${course.name}`} buttonColor={buttonStyle.primaryColor} text='Mas información' opensInAnotherTab={'_blank'}></ExternalLinkButton>:null}
               </div>
             </div>
           ))

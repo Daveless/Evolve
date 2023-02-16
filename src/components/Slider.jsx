@@ -3,7 +3,7 @@ import img1 from '../img/1.svg'
 import img2 from '../img/2.svg'
 import img3 from '../img/3.svg'
 import style from '../styles/slider.module.css'
-
+import CalltoAction from "./CalltoAction"
 const Slider = () => {
     const [imgIndex, setimgIndex] = useState(0)
 
@@ -22,19 +22,28 @@ const Slider = () => {
 
   return (
     <div className={style.sliderContainer}>
-        <img src={sliderContent[imgIndex].imgRounte} alt="" />
+        <div className={style.illustContainer}>
+          <img src={sliderContent[imgIndex].imgRounte} alt="" />
+        </div>
+        
         <button className={style.nextButton} onClick={nextSlide}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <polyline points="9 6 15 12 9 18" />
 </svg></button>
-        <button className={style.previousButton} onClick={previousSlide}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <polyline points="15 6 9 12 15 18" />
-</svg></button>
-        <div>
+       
+        
+          <button className={style.previousButton} onClick={previousSlide}><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <polyline points="15 6 9 12 15 18" />
+            </svg>
+          </button>
+        
+        <div className={style.magnetContainer}>
+        <div className={style.sliderPhrase}>
         <p>{sliderContent[imgIndex].text}</p>
         </div>
-        
+        <CalltoAction></CalltoAction>
+        </div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import ScrollSnapSlider from "./ScrollSnapSlider"
+import style from '../styles/secondSlider.module.css'
 
 const Section4 = () => {
 
@@ -13,7 +14,7 @@ const Section4 = () => {
         ventajas: ['Después de hacer el primer pago te enviamos el material y podras comenzar la ruta para dominar el Inglés']},
     ]
   return (
-    <div>
+    <div className={style.secondSlider}>
         <ScrollSnapSlider hasPictures={false} coursesList={stepsForStarting} informationButton={false}></ScrollSnapSlider>
     </div>
   )

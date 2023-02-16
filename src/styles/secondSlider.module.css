@@ -1,0 +1,25 @@
+
+@media (min-width:801px)  {
+    .secondSlider div{
+        grid-template-columns: 35vw 35vw 35vw;
+        }
+}
+@media (min-width:1281px)  {
+    .secondSlider{
+        width: 100%;
+        margin: auto;
+    }
+    .secondSlider div{
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        scroll-snap-type: none;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .secondSlider div div{
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    }

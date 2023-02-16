@@ -1,7 +1,8 @@
 import style from '../styles/footer.module.css'
 const Footer = () => {
   return (
-    <div className={style.footer}>
+    <div className={style.footerContainer}>
+        <div className={style.footer}>
         <div className={style.footerTitle}>
         <h4>Evolve</h4>
         <p>English for Everyone</p>
@@ -52,6 +53,7 @@ const Footer = () => {
         <p>Website developed by <a target='_blank' href="https://www.linkedin.com/in/dave-rojas-villacreses/">David Rojas</a></p>
         </div>
         
+    </div>
     </div>
   )
 }

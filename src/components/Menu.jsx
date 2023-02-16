@@ -22,7 +22,7 @@ const Menu = ({menu, menuHandler}) => {
         <ul>
                 <li><a href="#section1">Inicio</a></li>
                 <li><a href="#section2">Cursos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
+            
         </ul>
         </div>
 

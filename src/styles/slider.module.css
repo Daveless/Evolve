@@ -2,34 +2,42 @@
     display: grid;
     align-items: center;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 2fr 2fr 4fr;
     width: 100%;
-    height: 55vh;
+    height: 90vh;
     margin: auto;
     position: relative;
 }
-.sliderContainer img{
-    max-width: 100%;
+.illustContainer{
+    width: 100%;
+   height: 100%;
     grid-column: 1/4;
-    grid-row: 1/2;
-    object-fit: cover;
+    grid-row: 1/3;
 }
-.sliderContainer div{
+.illustContainer img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.sliderPhrase{
     grid-column: 1/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
     width: 90%;
     margin: 0 auto;
-    padding: 0.5rem auto;
     border-radius: 1rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sliderContainer p{
+div:has(.sliderPhrase){
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+.sliderPhrase p{
     font-size: 15px;
     font-weight: 600;
-    padding: 0rem;
+    padding: 0.5rem 1rem;
     width: 90%;
     height: 100%;
     margin: auto;
@@ -38,21 +46,46 @@
 }
 .nextButton{
 grid-column: 3/4;
-grid-row: 1/2;
+grid-row: 2/3;
 }
 .previousButton{
 grid-column: 1/2;
-grid-row: 1/2;
+grid-row: 2/3;
 }
-.sliderContainer button{
-    background: rgba(53, 53, 53, 0.445);
+.sliderButtons button{
+    background: rgb(175, 26, 26);
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 1rem;
-    width: 35px;
-    height: 35px;
+    width: 100%;
+    max-width: 50px;
+    height: 100%;
+    max-height: 50px;
     margin: auto;
 }
 
+@media (min-width:801px)  {
+    .sliderContainer{
+        grid-template-columns: 4% 46% 46% 4%;
+        grid-template-rows:  46% 4% 4% 46%;
+    }
+    .illustContainer{
+        grid-column: 3/5;
+        grid-row: 1/5;
+    }
+    
+    .nextButton{
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+    .previousButton{
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+    div:has(.sliderPhrase){
+        grid-column: 1/3;
+        grid-row: 1/5;
+    }
+}

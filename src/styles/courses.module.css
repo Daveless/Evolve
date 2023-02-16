@@ -62,4 +62,14 @@ column-gap: 1.5rem;
 .courseCards a button{
     width: 100%;
 }
+@media (min-width:801px)  {
+    .section2Container{
+        grid-template-columns: 45vw 45vw 45vw 45vw 45vw;
+    }
+}
+@media (min-width:1000px)  {
+    .section2Container{
+        grid-template-columns: repeat(5, minmax(450px, 1fr));
+    }
+}
 

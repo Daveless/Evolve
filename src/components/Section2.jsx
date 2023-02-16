@@ -32,7 +32,7 @@ const Section2 = () => {
   return (
     <div className={style.section2Container} id="section2">
       <h2>¡Tenemos el curso perfecto para ti!</h2>
-      <ScrollSnapSlider hasPictures={true} coursesList={coursesList} informationButton={true}></ScrollSnapSlider>
+      <ScrollSnapSlider hasPictures={true} coursesList={coursesList} informationButton={true} ></ScrollSnapSlider>
     </div>
   )
 }

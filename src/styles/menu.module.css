@@ -76,3 +76,50 @@ h1{
 .menuOff{
     display: none;
 }
+/*-------------------Desktop -------------*/
+@media (min-width: 1281px) {
+  .navMenu button{
+    display: none;
+  }
+  .navContainer{
+    height: 80px;
+  }
+  .navMenu{
+    justify-content: space-between;
+    height: 100%;
+    
+    background: none;
+  }
+  .menuLogo{
+    width: 50%;
+    max-width: 600px;
+  }
+  .menuOn ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    
+}
+h1{
+    font-size: 2rem;
+    color: black;
+    width: 100%;
+}
+
+.menuOff{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;  
+}
+.navMenu ul{
+    width: 100%;
+    max-width: 400px;
+}
+.navMenu li{
+    margin: 1rem;
+}
+    
+  }

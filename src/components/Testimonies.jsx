@@ -32,6 +32,7 @@ const testimonies = () => {
   return (
     <div className={style.section3}>
         <h3>¿Por qué escoger Evolve English Academy?</h3>
+    <div className={style.reasonCardsContainer}>
     {reasons.map(reason => (
         <div key={reason.title} className={style.reasonCard}>
             <hr />
@@ -40,6 +41,7 @@ const testimonies = () => {
             <p>{reason.description}</p>
         </div>
     ))}
+    </div>
     </div>
     
   )
