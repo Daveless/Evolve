@@ -1,12 +1,15 @@
 import React from 'react'
 import style from '../styles/menu.module.css'
+import logoPNG from '../img/favIcon/logoNavBar.png'
 
 const Menu = ({menu, menuHandler}) => {
   return (
     <div className={style.navContainer}>
         <nav className={style.navMenu}>
             <div className={style.menuLogo}>
+              <img src={logoPNG} alt="" />
               <h1>Evolve English Academy</h1>
+
             </div>
 
             <button onClick={menuHandler}>

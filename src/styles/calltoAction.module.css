@@ -14,9 +14,7 @@
     }
 }
 @media (min-width:1281px)  {
-    .sliderPhrase p{
-        font-size: 2.5rem;
-    }
+    
     .calltoAction a button p{
         font-size: 1.2rem;
     }
