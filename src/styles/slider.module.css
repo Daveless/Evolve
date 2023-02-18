@@ -33,6 +33,7 @@
 div:has(.sliderPhrase){
     grid-column: 1/4;
     grid-row: 3/4;
+    z-index: 1;
 }
 .sliderPhrase p{
     font-size: 15px;
@@ -52,8 +53,10 @@ grid-row: 2/3;
 grid-column: 1/2;
 grid-row: 2/3;
 }
-.sliderButtons button{
-    background: rgb(175, 26, 26);
+
+
+.sliderContainer button:has(svg){
+    background: rgba(0, 0, 0, 0.295);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +67,7 @@ grid-row: 2/3;
     height: 100%;
     max-height: 50px;
     margin: auto;
+    z-index: 3;
 }
 
 @media (min-width:801px)  {
