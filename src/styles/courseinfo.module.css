@@ -1,0 +1,73 @@
+.courseInfoContainer{
+    width: 80%;
+    margin: auto;
+}
+.courseInfoContainer h2{
+    text-align: center;
+}
+.pictureAndTextContainer img{
+    width: 100%;
+    max-height: 15rem;
+    object-fit: cover;
+    margin: auto;
+}
+.pictureAndTextContainer ul{
+    width: 90%;
+    padding: 0;
+    margin: 1rem auto;
+    list-style: none;
+}
+.pictureAndTextContainer li{
+    margin: 1rem auto;
+    width: 100%;
+}
+.pictureAndTextContainer li p{
+    margin: 0 auto;
+    font-weight: 700;
+    text-align: center;
+}
+.pictureAndTextContainer li hr{
+   width: 100%;
+}
+.courseInfoContainer button{
+    margin: 2rem auto;
+    width: 100%;
+}
+.courseInfoContainer a{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width: 18rem;
+}
+
+@media (min-width:900px)  {
+   .pictureAndTextContainer ul{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0 4rem;
+   }
+   .pictureAndTextContainer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   }
+   .pictureAndTextContainer img{
+    width: 70%;
+    margin: auto;
+    max-height: 30rem;
+    object-fit: cover;    
+}
+.courseInfoContainer button{
+    margin: 1rem auto 3rem;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+
+}
+.courseInfoContainer a{
+  
+    max-width: 20rem;
+  
+}
+
+    }

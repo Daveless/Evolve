@@ -1,8 +1,9 @@
 import React from 'react'
 import style from '../styles/menu.module.css'
 import logoPNG from '../img/favIcon/logoNavBar.png'
+import { Link } from 'react-router-dom'
 
-const Menu = ({menu, menuHandler}) => {
+const Menu = ({menu, menuHandler, section2ref}) => {
   return (
     <div className={style.navContainer}>
         <nav className={style.navMenu}>
@@ -13,7 +14,7 @@ const Menu = ({menu, menuHandler}) => {
             </div>
 
             <button onClick={menuHandler}>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="4" y1="6" x2="20" y2="6" />
   <line x1="4" y1="12" x2="20" y2="12" />
@@ -23,8 +24,8 @@ const Menu = ({menu, menuHandler}) => {
 
         <div className={menu}>
         <ul>
-                <li><a href="#section1">Inicio</a></li>
-                <li><a href="#section2">Cursos</a></li>
+                <li><Link to='/'>Inicio</Link></li>                
+                
             
         </ul>
         </div>
