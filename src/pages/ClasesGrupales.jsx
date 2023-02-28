@@ -16,8 +16,7 @@ const ClasesGrupales = () => {
             Horarios: 'No te preocupes por el tiempo! Tenemos varios horarios disponibles desde las 7AM hasta las 10PM',
             Material: 'Todos los recursos, ejercicios, videos y textos ya vienen incluidos!', 
             Niveles: 'Niveles disponibles: A1, A2, B1, B2', 
-            Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!', 
-            Precio: 'Todo por tan solo $45 mensuales'}
+            Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!'}
     }
 
 

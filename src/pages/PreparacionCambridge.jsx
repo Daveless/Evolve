@@ -17,8 +17,7 @@ const PreparacionCambridge = () => {
           Horarios: 'No te preocupes por el tiempo! Tenemos varios horarios disponibles desde las 7AM hasta las 10PM',
           Material: 'Todos los recursos, ejercicios, videos y textos ya vienen incluidos!', 
           Niveles: 'Preparación para rendir examenes de Cambridge PET (B1), FCE (B2), CAE (C1)', 
-          Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!', 
-          Precio: 'Todo por tan solo $100 mensuales'}
+          Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!'}
   }
 
   const menuHandler = () => menu===style.menuOn? setMenu(style.menuOff) : setMenu(style.menuOn)

@@ -17,8 +17,7 @@ const Nivelaciones = () => {
           Horarios: 'No te preocupes por el tiempo! Tenemos varios profesores disponibles desde las 7AM hasta las 10PM',
           Material: 'Recursos de refuerzo incluidos', 
           Niveles: 'Ayuda para cualquier nivel de inglés. Desde básico hasta avanzado', 
-          Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!', 
-          Precio: '$6 la hora'}
+          Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!'}
   }
 
   const menuHandler = () => menu===style.menuOn? setMenu(style.menuOff) : setMenu(style.menuOn)

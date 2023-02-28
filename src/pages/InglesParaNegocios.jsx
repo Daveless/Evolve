@@ -17,8 +17,7 @@ const InglesParaNegocios = () => {
           Horarios: 'No te preocupes por el tiempo! Tenemos varios horarios disponibles desde las 7AM hasta las 10PM',
           Material: 'Todos los recursos, ejercicios, videos y textos ya vienen incluidos!', 
           Niveles: 'Puedes tomar este curso aunque no tengas conocimiento previo del ingles o puedes iniciar en un nivel intermedio o avanzado', 
-          Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!', 
-          Precio: 'Todo por tan solo $80 mensuales'}
+          Profesores: 'Nuestros profesores son nativos o cuentan concertificación de Cambridge!'}
   }
 
   const menuHandler = () => menu===style.menuOn? setMenu(style.menuOff) : setMenu(style.menuOn)
